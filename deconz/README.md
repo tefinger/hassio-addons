@@ -2,6 +2,12 @@
 
 Add-on to allow Home Assistant to control a ZigBee network with Conbee or RaspBee hardware by Dresden Elektronik.
 
+## First Steps
+
+If using RaspBee, you may need to edit config.txt on the root of your SD card for your RaspBee to be recognized and assigned a device name: see https://github.com/marthoc/hassio-addons/blob/master/deconz/RASPBEE-SETUP.md.
+
+Before starting the add-on for the first time, in the add-on config you must specify the device name that has been assigned to your RaspBee/Conbee. Specify the device name in quotes (e.g. "/dev/ttyUSB0"). The other config options have sensible defaults that should not need to be changed.
+
 ## Adding ZigBee Devices
 
 After installing and starting this addon in Hass.io, access the deCONZ WebUI to add ZigBee devices: http://hassio.local:8080
@@ -15,6 +21,10 @@ If `discovery:` is enabled in configuration.yaml, navigate to the Configuration 
 If `discovery:` is not enabled, follow these instructions to configure the deCONZ component: https://home-assistant.io/components/deconz/.
 
 Raise any issues with this Add-on at https://github.com/marthoc/hassio-addons.
+
+## Firmware Upgrades
+
+You can upgrade the firmware of your RaspBee / Conbee device by following the instructions here: https://github.com/marthoc/hassio-addons/blob/master/deconz/FIRMWARE-UPGRADE.md. 
 
 ## Important!!
 
