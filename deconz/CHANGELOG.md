@@ -3,8 +3,8 @@
 ## **2.05.39** - 2018-09-26
 ### Changed
 - Bump deCONZ to 2.05.39.
-- Require deCONZ device to be specified in config.
 - Add firmware upgrade instructions to README.
+- [Breaking Change] Require deCONZ device to be specified in config (see README).
 - [Experimental] Add support for aarch64.
 
 ## **2.05.35** - 2018-08-20
