@@ -1,34 +1,25 @@
 {
     "name": "deCONZ",
-    "version": "2.05.44",
+    "version": "2.05.47",
     "slug": "deconz",
     "description": "Control a ZigBee network with Conbee or RaspBee by Dresden Elektronik",
-    "arch": ["amd64","armhf","aarch64"],
-    "url": "https://github.com/marthoc/hassio-addons",
-    "startup": "initialize",
+    "arch": ["aarch64","amd64","armhf","i386"],
+    "url": "https://home-assistant.io/addons/deconz",
+    "startup": "system",
     "boot": "auto",
     "webui": "http://[HOST]:[PORT:8080]",
     "host_network": true,
     "auto_uart": true,
+    "apparmor": false,
     "options": {
         "deconz_device": null,
         "web_port": 8080,
-        "websockets_port": 8443,
-        "debug_info": 1,
-        "debug_aps": 0,
-        "debug_zcl": 0,
-        "debug_zdp": 0,
-        "debug_otau": 0
+        "websockets_port": 8443
     },
     "schema": {
         "deconz_device": "str",
         "web_port": "port",
-        "websockets_port": "port",
-        "debug_info": "int(0,2)",
-        "debug_aps": "int(0,1)",
-        "debug_zcl": "int(0,1)",
-        "debug_zdp": "int(0,1)",
-        "debug_otau": "int(0,1)"    
+        "websockets_port": "port"
     },
-    "image": "marthoc/hassio-addon-deconz-{arch}"
+    "image": "homeassistant/{arch}-addon-homeassistant"
 }
