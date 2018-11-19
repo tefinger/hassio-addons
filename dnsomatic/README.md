@@ -4,4 +4,4 @@ Add-on to keep DNS-O-Matic updated with the current public IP address. DNS-O-Mat
 
 Create an account at DNS-O-Matic and configure the DNS provider you want to keep up-to-date at https://dnsomatic.com.
 
-Configure this add-on with your hostname, DNS-O-Matic username and password, and your preferred update interval in seconds. Default update interval is 3600 seconds = 1 hour. Minimum update interval is 300 seconds = 5 minutes to avoid an abuse ban by DNS-O-Matic.
+Configure this add-on with your hostname, DNS-O-Matic username and password, and your preferred update interval in seconds. Default (300 seconds) checks for a new IP every 5 minutes and doesn't update DNS-O-Matic unless an IP change is detected.
