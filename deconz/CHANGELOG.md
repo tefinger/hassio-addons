@@ -1,5 +1,9 @@
 # Changelog
 
+## **2.05.54** - 2018-01-08
+### Changed
+- Bump deCONZ to 2.05.54
+
 ## **2.05.52** - 2018-12-18
 ### Changed
 - Bump deCONZ to 2.05.52.
