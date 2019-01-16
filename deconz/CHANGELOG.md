@@ -1,5 +1,9 @@
 # Changelog
 
+## **2.05.55.1** - 2019-01-16
+### Fixed
+- Fixed bugs in startup script
+
 ## **2.05.55** - 2018-01-15
 ### Added
 - Add VNC server support for viewing the deCONZ ZigBee mesh
